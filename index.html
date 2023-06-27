@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSV Sharma</title>
+    <link rel="stylesheet" href="file:///D:/port/styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="connect.html">CONNECT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>  
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    WEB LEARNER
+                </p>
+                <h1>Hi, I'm <span>SSV</span> Sharma</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="file:///F:/ssv/IMG_20230626_182143.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p class="bio">I was born and brought up in Tumkur,Karnataka,India.<br>
+                    I'm interested in Web development,<a href="gallery.html" class="photography">photography</a> and Badminton.<br>
+                    I'm an enthusiastic learner and I believe in myself.<br>
+                    My philosophy of life is <br><span class="philo"><em>EARN-EAT-EXPLORE-EDUCATE</em></span></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links active-link" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS </span> Design</li>
+                            <li><span>WEB </span> Front-end Development</li>
+                            <li><span>C programming</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>1st grade-9th grade</span><br>CVM Tumkur(2009-2018)</li>
+                            <li><span>10th-12th</span><br>Seshadripuram, Tumkur(2018-2021)</li>
+                            <li><span>BTech</span><br>SIT,Tumkur(2021-present)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>GFG Students Chapter</span><br>From June-2022 to present</li>
+                            <li><span>IEEE SIT-SB</span><br>From June-2022 to present </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

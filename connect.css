@@ -1,0 +1,20 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color:aliceblue;
+}
+h1{
+    text-align: center;
+    text-shadow:2px 2px #ababab;
+}
+#contact{
+    margin-top: 175px;
+}
+.fa-brands,.fa-solid{
+    font-size: 50px;
+    padding: 25px;
+}
+a:hover i{
+    transition: 0.5s;
+    transform: scale(1.5);
+}
