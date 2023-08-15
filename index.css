@@ -85,14 +85,14 @@
         justify-content: space-between;
         flex-wrap: wrap;
        }
-       .about-col-1{
+       .about1{
         flex-basis: 35%;
        }
-       .about-col-1 img{
+       .about1 img{
         width:100%;
         border-radius: 15px;
        }
-       .about-col-2{
+       .about2{
         flex-basis: 60%;
        }
        .subtitle{
